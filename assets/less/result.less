@@ -42,6 +42,32 @@
   }
 
   .boss-competition{
+    position: relative;
+    &::before{
+      content: " ";
+      width: 0.133rem;
+      height: 0.133rem;
+      border-radius: 50%;
+      border: 2px solid #333;
+      position: absolute;
+      top: 0.133rem;
+      background-color: #ffec5a;
+      left: 0.133rem;
+    }
+
+    &::after{
+      content: " ";
+      width: 0.133rem;
+      height: 0.133rem;
+      border-radius: 50%;
+      border: 2px solid #333;
+      position: absolute;
+      top: 0.133rem;
+      background-color: #ffec5a;
+      right: 0.133rem;
+    }
+    border: 3px solid #333;
+    border-radius: 0.266rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -53,9 +79,12 @@
     margin: 0 auto;
     font-size: 0.48rem;
     color: #ffd600;
+    margin-bottom: 0.133rem;
   }
 
   .boss-des{
+    z-index: 11;
+    text-decoration: underline;
     padding: 0.2666rem 0.4rem;
     margin-top: 10px;
     box-sizing: border-box;
@@ -66,17 +95,39 @@
     height: 2.3333rem;
     margin: 0 auto;
     border: 2px solid #333333;
+    border-radius: 0.133rem;
+    position: relative;
+    border-bottom-right-radius: 0.266rem;
+    border-bottom-left-radius: 0.266rem;
   }
 
   .call-to-action-wrap{
-    width: 8.266rem;
-    height: 3.866rem;
-    background-color: #8a4efb;
+    z-index: 1;
+    top: -0.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 8.30rem;
+    height: 4.25rem;
+    background: url(../img/play_again_wrap.png) no-repeat;
+    background-size: cover;
     margin: 0 auto;
+    padding-top: 0.8rem;
+    box-sizing: border-box;
 
     .J_CTA{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 0.586rem;
       color: white;
+      background: url(../img/result_button.png) no-repeat;
+      width: 6.866rem;
+      height: 2.2rem;
+      background-size: cover;
+      margin: 0 auto;
+      font-weight: bolder;
+      text-shadow: #000 1px 0 3px;
     }
   }
 
@@ -86,6 +137,15 @@
     width: 10rem;
     height: 4rem;
     background-size: cover;
+  }
+
+  .banner-wrapper{
+    background-color: #fddd00;
+    padding-top: 0.4rem;
+    padding-bottom: 3rem;
+    .banner{
+      margin-bottom: 0.266rem;
+    }
   }
 
 }
