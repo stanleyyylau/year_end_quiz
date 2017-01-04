@@ -104,6 +104,7 @@
   background-color: #ffec5a;
 }
 #questions-wrap .inner-box .answer-item {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
